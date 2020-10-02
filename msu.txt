@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Search Results - pharmaceutical</title>
+<link href="/css/custom/119716.css" rel="stylesheet" type="text/css"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.vprgs.msu.edu/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+</head>
+<body class="not-front main-sidebar site-msu-technologies">
+<header class="site-header" role="banner">
+<div class="container">
+<h1 class="visually-hidden">Technology Publisher</h1>
+<a class="logo" href="/" rel="home" title="Home">
+<span>MSU Technologies</span>
+</a>
+<!-- <div class="logo">
+            <script id="scriptlogo" type="text/javascript" src="/widget.aspx?type=logo"></script>
+        </div> -->
+<button class="mobile-menu" title="Open Menu"><span>Toggle Main Menu</span></button>
+</div>
+<div class="site-navigation">
+<div class="site-navigation-wrapper">
+<nav class="primary-nav region region-header" role="navigation">
+<div class="container">
+<h2 class="visually-hidden">Main Menu</h2>
+<div class="block block-menu-block block-odd first last block-odd first last clearfix" id="block-menu_block-1">
+<div class="block-inner">
+<div class="content">
+<div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+<ul class="menu">
+<li class="first leaf has-children menu-mlid-405 news-events mid-405"><a href="http://technologies.msu.edu/news" title="">News &amp; Events</a></li>
+<li class="leaf has-children menu-mlid-394 for-researchers mid-394"><a href="http://technologies.msu.edu/researchers">For Researchers</a></li>
+<li class="leaf has-children menu-mlid-396 for-industry mid-396"><a href="http://technologies.msu.edu/industry">For Industry</a></li>
+<li class="leaf menu-mlid-395 entrepeneurs-investors mid-395"><a href="http://technologies.msu.edu/entrepreneurs-investors">Entrepreneurs &amp; Investors</a></li>
+<li class="leaf has-children menu-mlid-315 about mid-315"><a href="http://technologies.msu.edu/about">About</a></li>
+<li class="last leaf has-children menu-mlid-316 contact mid-316"><a href="http://technologies.msu.edu/contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div> <!-- /block-inner /block -->
+</div>
+</nav><!-- .primary-nav -->
+<div class="top-banner">
+<div class="container">
+<div class="region region-site-collection">
+<div class="block block-menu-block block-odd first last block-odd first last clearfix" id="block-menu_block-2">
+<div class="block-inner">
+<div class="content">
+<div class="menu-block-wrapper menu-block-2 menu-name-menu-site-collection parent-mlid-0 menu-level-1">
+<ul class="menu">
+<li class="first leaf menu-mlid-398 msu-innovation-center mid-398"><a href="http://innovationcenter.msu.edu/" title="">MSU Innovation Center</a></li>
+<li class="leaf menu-mlid-400 business-connect mid-400"><a href="http://businessconnect.msu.edu/" title="">Business Connect</a></li>
+<li class="leaf menu-mlid-401 msu-technologies mid-401"><a href="http://technologies.msu.edu/" title="">MSU Technologies</a></li>
+<li class="last leaf menu-mlid-399 spartan-innovations mid-399"><a href="http://spartaninnovations.org/" title="">Spartan Innovations</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div> <!-- /block-inner /block -->
+</div><!-- .region-site-collection -->
+<span class="msu-logo">Michigan State University</span>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="page-title">
+<div class="container">
+<h1 class="title">Available Technologies</h1>
+</div>
+</div>
+<a class="section-toggle" href="#section-title" id="section-anchor">Browse this Section...</a>
+<div class="main-wrapper">
+<div class="container">
+<div class="row">
+<main class="clearfix" role="main">
+<div class="container">
+<div class="content-area">
+<!-- Content -->
+<form action="" id="formTechPub1" method="post" name="formTechPub1"><input id="hidFormPost" name="hidFormPost" type="hidden" value="posted"/><h2 class="large-title">Search Results - pharmaceutical</h2>
+<table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+<tr>
+<td valign="top"><b>64</b> Results</td>
+<td align="right" valign="top">
+<b>Sort By:</b>
+<select id="ddnSort" name="ddnSort" onchange="applySort();">
+<option selected="" value="datecreated">Published Date</option>
+<option value="title">Title</option>
+<option value="marketingprojectid">ID</option>
+</select>
+<select id="ddnOrder" name="ddnOrder" onchange="applySort();">
+<option selected="" value="desc">Descending</option>
+<option value="asc">Ascending</option>
+</select>
+</td>
+</tr>
+</table>
+<h2 class="align-title"><a href="/technology/39795">Small Molecule Inhibitors For The Treatment Of Proteinopathies</a></h2>
+    INTRODUCTIONProtein aggregation that leads to plaque formation is a contributor in many degenerative diseases including Alzheimer’s, Parkinson’s, Type 2 diabetes, and other amyloidosis diseases. Once these plaques are formed, they are extremely difficult to degrade. Breakdown and even inhibition of oligomers before formation of these plaques...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 5/6/2020</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=jessica+fortin&amp;type=i">Jessica Fortin</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=medical&amp;type=c">Medical</a>, <a href="/searchresults.aspx?q=chemicals&amp;type=c">Chemicals</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a></span>
+</div>
+<h2 class="align-title"><a href="/technology/39794">Evolution Of Models To Predict Protein Function Using Genetic Programming</a></h2>
+    INTRODUCTIONGenetic Programming (GP) follows the concept put forth by Darwin – “Survival of the Fittest”. Species that evolve and adapt in response to the environment are more likely to survive. GP evolves models that can optimize peptides and proteins for variety of applications. It requires only basic understanding in protein engineering....
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 5/6/2020</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=assaf+gilad&amp;type=i">Assaf Gilad</a>, <a href="/searchresults.aspx?q=wolfgang+banzhaf&amp;type=i">Wolfgang Banzhaf</a>, <a href="/searchresults.aspx?q=alexander+bricco&amp;type=i">Alexander Bricco</a>, <a href="/searchresults.aspx?q=iliya+miralavykomsari&amp;type=i">Iliya Miralavykomsari</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=biotechnology&amp;type=c">Biotechnology</a>, <a href="/searchresults.aspx?q=computer+software&amp;type=c">Computer Software</a>, <a href="/searchresults.aspx?q=data+processing%2fanalysis&amp;type=c">Data Processing/Analysis</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a>, <a href="/searchresults.aspx?q=therapeutic&amp;type=c">Therapeutic</a></span>
+</div>
+<h2 class="align-title"><a href="/technology/39767">New Compounds to Treat, Detect and Prevent Congenital Heart Disease</a></h2>
+    Executive Summary:Congenital heart defects (CHD) are the most common type of congenital defects in humans. It affects 1% of infants born each year. CHD can be caused by environmental exposures as well as having a genetic component to the disease. Studies have shown ~400 genes that are associated with CHD. However, 60% of the time the cause for these...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 5/4/2020</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=aitor+aguirre&amp;type=i">Aitor Aguirre</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=medical&amp;type=c">Medical</a>, <a href="/searchresults.aspx?q=biotechnology&amp;type=c">Biotechnology</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a>, <a href="/searchresults.aspx?q=therapeutic&amp;type=c">Therapeutic</a></span>
+</div>
+<h2 class="align-title"><a href="/technology/39139">Novel Rexinoid Agonists for Kras-mediated cancer and immunotherapy</a></h2>
+    Executive Summary:KRAS is one of the most common oncogenes that, when mutated, causes normal cells to become cancerous.  Current therapeutics designed to block KRAS function have not shown favorable clinical outcomes and therefore, KRAS has been deemed an “undruggable” target. However, our studies demonstrate that novel, appropriately substituted...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 3/11/2020</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=karen+liby&amp;type=i">Karen Liby</a>, <a href="/searchresults.aspx?q=edmund+ellsworth&amp;type=i">Edmund Ellsworth</a>, <a href="/searchresults.aspx?q=ana+sofia+leal&amp;type=i">Ana Sofia Leal</a>, <a href="/searchresults.aspx?q=bilal+aleiwi&amp;type=i">Bilal Aleiwi</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a>, <a href="/searchresults.aspx?q=therapeutic&amp;type=c">Therapeutic</a></span>
+</div>
+<h2 class="align-title"><a href="/technology/38394">Tunable Luminescent Organic Salts for Enhanced Imaging and Photodynamic Therapy</a></h2>
+    Executive Summary:Theranostic nanomedicine, the medical application of nanobiotechnology, is an emerging area of cancer research. These nanosystems are capable of diagnosing, curing, or preventing diseases. One example of theranostic nanomedicine is photodynamic therapy which uses photosensitizing agents with light to kill cancer cells. However, a major...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 1/31/2020</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=richard+lunt&amp;type=i">Richard Lunt</a>, <a href="/searchresults.aspx?q=sophia+lunt&amp;type=i">Sophia Lunt</a>, <a href="/searchresults.aspx?q=deanna+broadwater&amp;type=i">Deanna Broadwater</a>, <a href="/searchresults.aspx?q=margaret+(aka+peggy)+young&amp;type=i">Margaret (aka Peggy) Young</a>, <a href="/searchresults.aspx?q=matthew+bates&amp;type=i">Matthew Bates</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=medical&amp;type=c">Medical</a>, <a href="/searchresults.aspx?q=advanced+materials&amp;type=c">Advanced Materials</a>, <a href="/searchresults.aspx?q=chemicals&amp;type=c">Chemicals</a>, <a href="/searchresults.aspx?q=veterinary&amp;type=c">Veterinary</a>, <a href="/searchresults.aspx?q=therapeutic&amp;type=c">Therapeutic</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a>, <a href="/searchresults.aspx?q=nanotechnology&amp;type=c">Nanotechnology</a></span>
+</div>
+<h2 class="align-title"><a href="/technology/34426">Method for Improved Production of Terpenoids Using Co-Engineered Lipid Droplets and Anchoring of Terpene Biosynthetic Enzymes on Their Surface</a></h2>
+    Executive SummaryThis technology addresses one of the main hurdles of plant production and extraction of terpenoids by capturing desired terpenes in lipid droplets in plant cells.  The lipid droplets are readily extracted using standard processes used in the vegetable oil and biodiesel industries, and the high-value terpenes can be easily separated...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 5/28/2019</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=bj%c3%b6rn+(bjoern)+hamberger&amp;type=i">Björn (Bjoern) Hamberger</a>, <a href="/searchresults.aspx?q=radin+sadre&amp;type=i">Radin Sadre</a>, <a href="/searchresults.aspx?q=christoph+benning&amp;type=i">Christoph Benning</a>, <a href="/searchresults.aspx?q=jacob+bibik&amp;type=i">Jacob Bibik</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=agriculture&amp;type=c">Agriculture</a>, <a href="/searchresults.aspx?q=chemicals&amp;type=c">Chemicals</a>, <a href="/searchresults.aspx?q=biotechnology&amp;type=c">Biotechnology</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a></span>
+</div>
+<h2 class="align-title"><a href="/technology/34425">Method for Production of Novel Diterpene Scaffolds</a></h2>
+    Executive SummaryMany insecticides currently in use are problematic due to persistence in the environment and off target effects including accumulation in apex predator species. Therefore effective crop-protecting agents that are naturally sourced and that overcome some of these side effects are under increasing demand. This technology identifies biosynthetic...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 5/28/2019</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=bj%c3%b6rn+(bjoern)+hamberger&amp;type=i">Björn (Bjoern) Hamberger</a>, <a href="/searchresults.aspx?q=sean+johnson&amp;type=i">Sean Johnson</a>, <a href="/searchresults.aspx?q=wajid+bhat&amp;type=i">Wajid Bhat</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=agriculture&amp;type=c">Agriculture</a>, <a href="/searchresults.aspx?q=chemicals&amp;type=c">Chemicals</a>, <a href="/searchresults.aspx?q=biotechnology&amp;type=c">Biotechnology</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a></span>
+</div>
+<h2 class="align-title"><a href="/technology/29841">020009: Compositions and Methods for Epizootic Catarrhal Enteritis (ECE) Therapeutics and Diagnostics in Ferrets</a></h2>
+    In 1999, a coronavirus was identified as the cause 
+of Epizootic Catarrhal Enteritis (ECE) in ferrets, a highly contagious diarrheal 
+disease for which there are no effective diagnostics, therapeutics, or 
+preventatives. This disease costs ferret breeders and owners millions of dollars 
+a year in health care costs and lost revenue. In 1996, approximately...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 11/27/2018</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=roger+maes&amp;type=i">Roger Maes</a>, <a href="/searchresults.aspx?q=matti+kiupel&amp;type=i">Matti Kiupel</a>, <a href="/searchresults.aspx?q=annabel+wise&amp;type=i">Annabel Wise</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s): <a href="/searchresults.aspx?q=coronavirus&amp;type=k">Coronavirus</a>, <a href="/searchresults.aspx?q=diagnosis&amp;type=k">Diagnosis</a>, <a href="/searchresults.aspx?q=ferret&amp;type=k">Ferret</a>, <a href="/searchresults.aspx?q=prevention&amp;type=k">Prevention</a>, <a href="/searchresults.aspx?q=screening&amp;type=k">Screening</a>, <a href="/searchresults.aspx?q=treatment&amp;type=k">Treatment</a>, <a href="/searchresults.aspx?q=vaccine&amp;type=k">Vaccine</a></span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=biotechnology&amp;type=c">Biotechnology</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a>, <a href="/searchresults.aspx?q=animal%2fveterinary&amp;type=c">Animal/Veterinary</a></span>
+</div>
+<h2 class="align-title"><a href="/technology/28745">Improving Pharmacokinetics and Efficacy of DFMO</a></h2>
+    Executive SummaryFor many years, the drug difluoromethylornithine (DFMO) has been shown to display chemopreventive and therapeutic properties with recent successes in the treatment of patients with high-risk neuroblastoma (NB) and colorectal cancer. In a non-cancer setting, this FDA-approved drug cures 95% of patients with West African sleeping sickness...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 9/17/2018</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=andre+bachmann&amp;type=i">Andre Bachmann</a>, <a href="/searchresults.aspx?q=thomas+dowling&amp;type=i">Thomas Dowling</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=medical&amp;type=c">Medical</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a></span>
+</div>
+<h2 class="align-title"><a href="/technology/27805">Novel MmpL3 Inhibitor as a Treatment of Mycobacterium Tuberculosis</a></h2>
+    Executive SummaryMycobacterium Tuberculosis (Mtb) is the pathogen responsible for Tuberculosis. Standard TB treatments typically require four different drugs and a duration of six to nine months of treatment; however, there is still an evolution of drug-resistant Mtb. With not only Tuberculosis, but drug-resistant Tuberculosis causing upwards of 1.5...
+    <div class="small-text">
+<span style="font-size:11px; color:#808080;">Published: 6/4/2018</span>
+          |  
+        <span style="font-size:11px; color:#808080;">Inventor(s): <a href="/searchresults.aspx?q=robert+abramovitch&amp;type=i">Robert Abramovitch</a>, <a href="/searchresults.aspx?q=huiqing+zheng&amp;type=i">Huiqing Zheng</a></span>
+<div style="height:5px;"></div>
+<span style="font-size:11px; color:#808080;">Keywords(s):  </span>
+<span style="font-size:11px; color:#808080;">Category(s): <a href="/searchresults.aspx?q=medical&amp;type=c">Medical</a>, <a href="/searchresults.aspx?q=biotechnology&amp;type=c">Biotechnology</a>, <a href="/searchresults.aspx?q=pharmaceutical&amp;type=c"><span class="search_keyword_highlight">Pharmaceutical</span></a></span>
+</div>
+<table border="0" cellpadding="3" cellspacing="0">
+</table>
+<table border="0" cellpadding="3" cellspacing="0">
+</table>
+<div><b>1</b> <a href="#" onclick="pageResults(1); return false;">2</a> <a href="#" onclick="pageResults(2); return false;">3</a> <a href="#" onclick="pageResults(3); return false;">4</a> <a href="#" onclick="pageResults(4); return false;">5</a> <a href="#" onclick="pageResults(5); return false;">6</a> <a href="#" onclick="pageResults(6); return false;">7</a> </div><input id="hidTerm" type="hidden" value="pharmaceutical"/>
+<input id="hidType" type="hidden" value=""/>
+<input id="hidIsExact" type="hidden" value=""/>
+<input id="hidPageIndex" type="hidden" value=""/>
+<script type="text/javascript">
+function pageResults(moveToIndex) {
+document.getElementById('hidPageIndex').value = moveToIndex.toString();
+applySort();
+}
+
+function applySort() {
+var loopBackUrl = '/searchresults.aspx';
+loopBackUrl += '?q=' + document.getElementById('hidTerm').value;
+loopBackUrl += '&type=' + document.getElementById('hidType').value;
+if (document.getElementById('hidIsExact').value != '') {
+     loopBackUrl += '&exact=' + document.getElementById('hidIsExact').value;
+}
+if (document.getElementById('hidPageIndex').value != '') {
+     loopBackUrl += '&page=' + document.getElementById('hidPageIndex').value;
+}
+var sort = document.getElementById('ddnSort');
+loopBackUrl += '&sort=' + sort.options[sort.selectedIndex].value;
+var order = document.getElementById('ddnOrder');
+loopBackUrl += '&order=' + order.options[order.selectedIndex].value;
+window.location.href = loopBackUrl;
+}
+</script>
+</form>
+</div><!-- .content-area -->
+</div><!-- .container -->
+</main><!-- .main -->
+<section class="region region-sidebar">
+<div class="container">
+<div class="block insidemenu">
+<h2 class="inside-menu-title"><a class="active-trail active">CATEGORIES</a></h2>
+<div class="inside-menu content">
+<div class="menu">
+<script id="scriptcategorylist" src="/widget.aspx?type=cl&amp;num=0&amp;list=v&amp;space=5&amp;showcount=true&amp;cols=1&amp;colspace=1" type="text/javascript"></script>
+</div>
+</div>
+</div>
+<div class="block">
+<a class="header_link" href="/advancedsearch.aspx">SEARCH</a>
+<a class="header_link" href="/rss.aspx">RSS FEED</a>
+</div>
+</div>
+</section><!-- .region-sidebar -->
+</div><!-- .row -->
+</div><!-- .container -->
+</div><!-- .main-wrapper -->
+<footer class="site-footer" role="contentinfo">
+<div class="extras">
+<div class="container">
+<div class="row">
+<div class="credits-left">
+<a class="msu-link" href="http://msu.edu" target="_blank" title="Visit MSU.EDU">
+              Michigan State University Visit MSU.EDU
+            </a>
+</div>
+<div class="credits-right">
+<div class="content">
+<div class="standard-footer-site-links">
+<ul>
+<li>Call us: <strong>517.355.2186</strong></li>
+<li><a href="/contact">Contact Information</a></li>
+<li><a href="/sitemap">Site Map</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/accessibility-policy">Site Accessibility</a></li>
+</ul>
+</div>
+<div class="standard-footer-MSU-info">
+<ul class="msu-info-list">
+<li>Call MSU: <strong><span class="msu-phone">(517) 355-1855</span></strong></li>
+<li>Visit: <strong><a href="http://msu.edu">msu.edu</a></strong></li>
+<li>MSU is an affirmative-action, <span>equal-opportunity employer.</span></li>
+</ul>
+<ul class="copyright">
+<li class="spartans-will">Spartans Will.</li>
+<li>©Michigan State University</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Optionally inserts your custom analytics code to track page views -->
+[%Analytics%]
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://msut.testtechnologypublisher.com/files/sites/techpub-script.js"></script>
+<iframe height="0" src="http://msut.technologypublisher.com/searchresults.aspx?msut=&amp;addiframe=noq=pharmaceutical" style="display:none;" width="0"> </iframe></body>
+</html>
