@@ -24,27 +24,27 @@ for td_tag in soup.find_all("td"):
 urls = []
                    
 for i in atag:
-    if i['href'][1:11] == 'innovation':
+    if i is not None and i['href'][1:11] == 'innovation':
         urls.append(i['href'])       
-print(urls)
+#print(urls)
 base_url = 'http://inventions.prf.org/'
 
-# #create final list of links
-# final_urls = []
-# for i in urls: 
-#     final_string = "".join((base_url, i))
-#     final_urls.append(final_string)
-
+#create final list of links
+final_urls = []
+for i in urls: 
+    final_string = "".join((base_url, i))
+    final_urls.append(final_string)
+#print(final_urls)
 # ###################################################################################################
 # #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
 
-# description = []
-# for i in final_urls:
-#     res = requests.get(i)
-#     source = res.content
-#     final_soup = BeautifulSoup(src,'lxml')
-#     print(final_soup)
-#     des = final_soup.find_all("div", {"class": "c_tp_description"})
-#     description.append(des)
+description = []
+for i in final_urls:
+    res = requests.get(i)
+    source = res.content
+    final_soup = BeautifulSoup(src,'lxml')
+    #print(final_soup)
+    des = final_soup.find_all("td", {"style": "white-space: pre-line;"})
+    description.append(des)
 
-# # print(description)
+print(description)
