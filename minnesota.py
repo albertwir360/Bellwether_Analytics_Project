@@ -39,7 +39,9 @@ for i in urls:
 ###################################################################################################
 #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
 #TODO: only grab the inside descriptions of the span tag
-description = []
+descriptions = []
+titles = []
+
 for i in final_urls:
     res = requests.get(i)
     source = res.content
@@ -48,6 +50,24 @@ for i in final_urls:
     for i in final_soup.find_all('div', class_='technology'):
         # print(i)
         text = i.find_all('p')
-        description.append(text)
+        title = i.find_all('h1')
+        titles.append(title)
+        descriptions.append(text)
 
-print(description)
+# clean titles
+# remove the empty lists
+titles = [title for title in titles if title != []]
+# flatten list of lists into list and convert to string
+flattened_titles = [str(title) for subtitle in titles for title in subtitle]
+# remove the h1 tags
+flattened_titles = [title.strip("</h1>") for title in flattened_titles]
+
+# clean descriptions
+# remove the empty lists and convert to string
+descriptions = [str(description) for description in descriptions if description != []]
+
+# TODO: create dict to map title of article ot description
+
+# use dict comprehension to convert title and description lists to dict
+minnesota_dict = {flattened_titles[i]: descriptions[i] for i in range(len(flattened_titles))}
+print(minnesota_dict)
