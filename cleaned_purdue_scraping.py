@@ -1,10 +1,13 @@
 # This script pertains to the scraping of Purdue technologies
 import requests
 from bs4 import BeautifulSoup
-import re
-# check to make sure that the website link piis good 
+
 result = requests.get('https://inventions.prf.org/tech/10/innovations')
-# print(result.status_code)
+# link above is for biomedical technologies, but this script can parse and clean all below links
+# providing links for all tech here:
+    # biotech: https://inventions.prf.org/tech/1/innovations
+    # medical: https://inventions.prf.org/tech/19/innovations
+    # pharma: https://inventions.prf.org/tech/21/innovations
 
 #puts all the html into src variable
 src = result.content
