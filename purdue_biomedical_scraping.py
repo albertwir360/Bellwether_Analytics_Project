@@ -45,23 +45,15 @@ for i in final_urls:
     res = requests.get(i)
     source = res.content
     final_soup = BeautifulSoup(source,'lxml')
-    name = final_soup.find("h1").get_text()
+    name = final_soup.find("h1").get_text() # located names of technologies
     tech_name.append(name)
-    des = final_soup.find_all("table", {"class" : "table table-hover"})
-    for tr in final_soup.find_all("tr"):
+    for tr in final_soup.find_all("tr"): # finding all descriptions which were within tr tags, then td tag
         for td_tag in final_soup.find_all("td", {"style" : "white-space: pre-line;"}):
             description.append(td_tag.get_text())
-    for ul in final_soup.find_all("ul", {"style" : "list-style: none; padding: 0;"}):
+    for ul in final_soup.find_all("ul", {"style" : "list-style: none; padding: 0;"}): # finding names of authors
         categories = ul.select("li a")
         for i in categories:
-            if i['href'][1:7] == 'person':
+            if i['href'][1:7] == 'person': # need to do this b/c there were multiple matches for the ul tag
                 author.append(i.get_text())
             
-print(description, tech_name, author)
-
-                
-            
-    
-    
-#("td", {"style" : "white-space: pre-line"})
-#print(description)
+print(description, tech_name, author) 
