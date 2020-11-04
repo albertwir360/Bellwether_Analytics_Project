@@ -1,4 +1,4 @@
-# This script pertains to the scraping of MSU technologies
+# This script pertains to the scraping of Northwestern technologies
 import requests
 from bs4 import BeautifulSoup
 import re
@@ -47,7 +47,7 @@ import re
 
 
 
-#function to webscrape msu webpages... this will be looped through 
+#function to webscrape northwestern webpages... this will be looped through 
 def northwestern(): 
     #request the website for html
     result = requests.get('https://www.invo.northwestern.edu/technologies/technologies/industry-pipelines/therapeutics/index.html')
@@ -92,47 +92,21 @@ def northwestern():
                 if atag[i] is not None:
                     description_urls.append(atag[i]['href']) 
     
+    # remove \xa0 tag 
+    info = [i.strip("\xa0") for i in info]
+    
+    #remove empty 
+    info = [i for i in info if i != ""]
     
     
-    
-    
-    #store url in list 
-    # urls = []
-    # for i in atag:
-    #     if i is not None:
-    #         urls.append(i['href'])  
-
-    # base_url = 'http://msut.technologypublisher.com/'    
-    # #create final list of links
-    # final_urls = []
-    # for i in urls: 
-    #     final_string = "".join((base_url, i))
-    #     final_urls.append(final_string)
-
-    # for i in final_urls:
-    #     x = []
-    #     y =[]
-    #     z =[]
-    #     res = requests.get(i)
-    #     source = res.content
-    #     final_soup = BeautifulSoup(source, 'lxml')
-    #     tech_name = final_soup.find("h2", {"class":"large-title"}).get_text()
-    #     z.append(tech_name)
-    #     for ul in final_soup.find_all("ul", {"class":"link-block"}):
-    #         categories = ul.select("li a")
-    #         for i in categories:
-    #             y.append(i.get_text())
-    #     for div in final_soup.find_all("div", {"class":"c_tp_description"}):
-    #         for span in final_soup.select("span"):
-    #             x.append(span.get_text())
-    #     print(x,y,z)
-        # cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (z, y, x))
+    #BELOW ARE COMMENTS RELATED TO MSU TEMPLATE MYSQL DATABASE - didn't remove bc it might be useful 
+    # cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (z, y, x))
 
 
 
-        # for i in range(len(x)):
-        #     cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (str(z[i]), str(y[i]), str(x[i])))
-        #     print("Inserted a row of data")
+    # for i in range(len(x)):
+    #     cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (str(z[i]), str(y[i]), str(x[i])))
+    #     print("Inserted a row of data")
  
 
 northwestern()
