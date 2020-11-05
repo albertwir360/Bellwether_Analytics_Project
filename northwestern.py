@@ -75,12 +75,17 @@ def northwestern():
     for i in range(len(id)):
         full = "dialog" + id[i] + "Desc"
         full_id.append(full)
+    title_id = []
+    for i in range(len(id)):
+        name = "dialog" + id[i] + "Title"
+        title_id.append(name)
     
     #for div in soup.find_all("div", {"id" : "dialog1-6Desc"}):
         #print(div.get_text()) 
     #below is the generalized version of the above^
     info = [] # this lists short description, primary inventor and tags
     atag = []
+    titles = []
     description_urls = [] # this gives a list of all the urls that lead to the full description
     for f in range(len(full_id)):
         for div in soup.find_all("div", {"id" : full_id[f]}):
@@ -91,13 +96,15 @@ def northwestern():
             for i in range(len(atag)):
                 if atag[i] is not None:
                     description_urls.append(atag[i]['href']) 
+    for f in range(len(full_id)):
+        for h5 in soup.find_all("h5", {"id" : title_id[f]}):
+            titles.append(h5.get_text())
     
     # remove \xa0 tag 
-    info = [i.strip("\xa0") for i in info]
+    info = [i.replace("\xa0", " ") for i in info]
     
-    #remove empty 
-    info = [i for i in info if i != ""]
     
+    northwestern_dict = {titles[i]: info[i] for i in range(len(titles))}
     
     #BELOW ARE COMMENTS RELATED TO MSU TEMPLATE MYSQL DATABASE - didn't remove bc it might be useful 
     # cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (z, y, x))
