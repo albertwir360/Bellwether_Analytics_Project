@@ -50,7 +50,7 @@ import re
 #function to webscrape northwestern webpages... this will be looped through 
 def northwestern(): 
     #request the website for html
-    result = requests.get('https://www.invo.northwestern.edu/technologies/technologies/industry-pipelines/therapeutics/index.html')
+    result = requests.get('https://www.invo.northwestern.edu/technologies/technologies/industry-pipelines/healthcare-devices-it/index.html')
     #store the html into a variable
     src= result.content
     #create beautiful soup object which give added functionality for parsing and store this into "soup" variable
@@ -105,7 +105,7 @@ def northwestern():
     
     
     northwestern_dict = {titles[i]: info[i] for i in range(len(titles))}
-    
+    print(northwestern_dict)
     #BELOW ARE COMMENTS RELATED TO MSU TEMPLATE MYSQL DATABASE - didn't remove bc it might be useful 
     # cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (z, y, x))
 

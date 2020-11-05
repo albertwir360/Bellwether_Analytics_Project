@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-result = requests.get('https://inventions.prf.org/tech/10/innovations')
+result = requests.get('https://inventions.prf.org/tech/21/innovations')
 # link above is for biomedical technologies, but this script can parse and clean all below links
 # providing links for all tech here:
     # biotech: https://inventions.prf.org/tech/1/innovations
@@ -50,13 +50,23 @@ for i in final_urls:
     final_soup = BeautifulSoup(source,'lxml')
     name = final_soup.find("h1").get_text() # located names of technologies
     tech_name.append(name)
-    for tr in final_soup.find_all("tr"): # finding all descriptions which were within tr tags, then td tag
-        for td_tag in final_soup.find_all("td", {"style" : "white-space: pre-line;"}):
-            description.append(td_tag.get_text())
+    # finding all descriptions which were within td tags
+    for td_tag in final_soup.find_all("td", {"style" : "white-space: pre-line;"}):
+        description.append(td_tag.get_text())
     for ul in final_soup.find_all("ul", {"style" : "list-style: none; padding: 0;"}): # finding names of authors
         categories = ul.select("li a")
         for i in categories:
             if i['href'][1:7] == 'person': # need to do this b/c there were multiple matches for the ul tag
                 author.append(i.get_text())
             
-print(description, tech_name, author) 
+# creating dict
+
+purdue_dict = {tech_name[i]: description[i] for i in range(len(tech_name))}
+print(purdue_dict)
+
+# for i in range(len(tech_name)):
+#     print("TITLE: " + tech_name[i] + "   DESC:   " + description[i])
+#     print("\n")
+
+
+
