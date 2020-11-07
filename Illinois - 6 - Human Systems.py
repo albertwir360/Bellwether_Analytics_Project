@@ -45,6 +45,8 @@ for i in urls:
 
 #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
 #TODO: only grab the inside descriptions of the span tag
+titles = []
+overviews = []
 product_and_description = {}
 
 for url in final_urls:
@@ -55,6 +57,8 @@ for url in final_urls:
     title = final_soup.find(id = "page-title").find_next_sibling('p').text
     overview = final_soup.find_all("div", class_ = 'field__item even')[1].text
     overview = overview.replace(u'\xa0', u' ') 
+    titles.append(title)
+    overviews.append(overview)
 
     #print(overview.findChildren())
     #break
