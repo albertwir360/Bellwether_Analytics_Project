@@ -1,5 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+import re
+
+TAG_RE = re.compile(r'<[^>]+>')
 
 
 # check to make sure that the website link is good 
@@ -66,7 +69,22 @@ flattened_titles = [title.strip("</h1>") for title in flattened_titles]
 # remove the empty lists and convert to string
 descriptions = [str(description) for description in descriptions if description != []]
 
-# TODO: create dict to map title of article ot description
+def remove_tags(text):
+    return TAG_RE.sub('', text)
+
+descriptions = [remove_tags(text) for text in descriptions]
+
+# cleaning to remove new lines and spaces
+# descriptions = [[[descr.replace("\n", " ") for text in descr] for descr in description] for description in descriptions]
+# descriptions = [descr for subdescr in descriptions for descr in subdescr]
+
+
+# print(descriptions[5])
+
+
+
+
+# create dict to map title of article to description
 
 # use dict comprehension to convert title and description lists to dict
 minnesota_dict = {flattened_titles[i]: descriptions[i] for i in range(len(flattened_titles))}
