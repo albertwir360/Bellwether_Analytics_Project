@@ -1,13 +1,15 @@
 # This script pertains to the scraping of Purdue technologies
 import requests
 from bs4 import BeautifulSoup
+import csv
 
-result = requests.get('https://inventions.prf.org/tech/21/innovations')
+result = requests.get('https://inventions.prf.org/tech/10/innovations')
 # link above is for biomedical technologies, but this script can parse and clean all below links
 # providing links for all tech here:
-    # biotech: https://inventions.prf.org/tech/1/innovations
-    # medical: https://inventions.prf.org/tech/19/innovations
-    # pharma: https://inventions.prf.org/tech/21/innovations
+    # biotech: https://inventions.prf.org/tech/1/innovations csv made
+    # medical: https://inventions.prf.org/tech/19/innovations csv made
+    # pharma: https://inventions.prf.org/tech/21/innovations csv made
+    # biomed: https://inventions.prf.org/tech/10/innovations
 
 #puts all the html into src variable
 src = result.content
@@ -62,11 +64,17 @@ for i in final_urls:
 # creating dict
 
 purdue_dict = {tech_name[i]: description[i] for i in range(len(tech_name))}
-print(purdue_dict)
+with open('purdue_biomed.csv', 'w') as csv_file:  
+        writer = csv.writer(csv_file)
+        for key, value in purdue_dict.items():
+            writer.writerow([key, value])
 
-# for i in range(len(tech_name)):
-#     print("TITLE: " + tech_name[i] + "   DESC:   " + description[i])
-#     print("\n")
+with open('purdue_biomed.csv') as csv_file:
+    reader = csv.reader(csv_file)
+    mydict = dict(reader)
+#print(purdue_dict)
+
+
 
 
 

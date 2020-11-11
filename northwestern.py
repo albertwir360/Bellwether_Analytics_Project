@@ -2,6 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import csv
 #import psycopg2
 
 
@@ -50,7 +51,7 @@ import re
 #function to webscrape northwestern webpages... this will be looped through 
 def northwestern(): 
     #request the website for html
-    result = requests.get('https://www.invo.northwestern.edu/technologies/technologies/industry-pipelines/healthcare-devices-it/index.html')
+    result = requests.get('https://www.invo.northwestern.edu/technologies/technologies/industry-pipelines/therapeutics/index.html')
     #store the html into a variable
     src= result.content
     #create beautiful soup object which give added functionality for parsing and store this into "soup" variable
@@ -105,6 +106,16 @@ def northwestern():
     
     
     northwestern_dict = {titles[i]: info[i] for i in range(len(titles))}
+
+    with open('therapeutics_northwestern.csv', 'w') as csv_file:  
+        writer = csv.writer(csv_file)
+        for key, value in northwestern_dict.items():
+            writer.writerow([key, value])
+
+    with open('therapeutics_northwestern.csv') as csv_file:
+        reader = csv.reader(csv_file)
+        mydict = dict(reader)
+
     print(northwestern_dict)
     #BELOW ARE COMMENTS RELATED TO MSU TEMPLATE MYSQL DATABASE - didn't remove bc it might be useful 
     # cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (z, y, x))
