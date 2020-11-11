@@ -1,32 +1,37 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[31]:
 
 
 import requests
 from bs4 import BeautifulSoup
+import re
 
 
-# In[22]:
+# In[32]:
+
+
+TAG_RE = re.compile(r'<[^>]+>')
+
+
+# In[33]:
 
 
 # biologics - 1195_biologics
 # biomarkers - 1198_biomarkers
 # cellular therapeutics - 1196_cellular-therapeutics
-# diagnostic/imaging - 1211_diagnostics-imaging
+# diagnostic imaging - 1211_diagnostics-imaging
 # human health - 4451_human-health
 # medical devices - 1214_medical-devices
 # nueroscience - 5252_neuroscience
 # pharma - 1197_pharmaceuticals
 
-result = requests.get('http://license.umn.edu/categories/1181_life-sciences/1198_biomarkers?query=')
-
-#check to make sure that the website link is good 
+result = requests.get('http://license.umn.edu/categories/1181_life-sciences/1195_biologics?query=')
 # print(result.status_code)
 
 
-# In[14]:
+# In[34]:
 
 
 #puts all the html into src variable
@@ -34,14 +39,14 @@ src= result.content
 # print(src)
 
 
-# In[15]:
+# In[35]:
 
 
 #create beautiful soup object in order to add more functionality to content variable 
 soup = BeautifulSoup(src,'lxml')
 
 
-# In[16]:
+# In[36]:
 
 
 #python list to store all URL headers
@@ -51,9 +56,10 @@ for h2_tag in soup.find_all("h2"):
     atag.append(a_tag)
 
 
-# In[17]:
+# In[37]:
 
 
+# gives all the urls in a python list with each element stored as strings 
 urls = []
 for i in atag:
     if i is not None:
@@ -62,7 +68,7 @@ for i in atag:
 base_url = 'http://license.umn.edu/'
 
 
-# In[18]:
+# In[38]:
 
 
 #create final list of links
@@ -73,10 +79,11 @@ for i in urls:
 # print(final_urls)
 
 
-# In[19]:
+# In[39]:
 
 
 #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
+#TODO: only grab the inside descriptions of the span tag
 descriptions = []
 titles = []
 
@@ -93,7 +100,7 @@ for i in final_urls:
         descriptions.append(text)
 
 
-# In[20]:
+# In[40]:
 
 
 # clean titles
@@ -104,13 +111,38 @@ flattened_titles = [str(title) for subtitle in titles for title in subtitle]
 # remove the h1 tags
 flattened_titles = [title.strip("</h1>") for title in flattened_titles]
 
+
+# In[41]:
+
+
 # clean descriptions
 # remove the empty lists and convert to string
 descriptions = [str(description) for description in descriptions if description != []]
 
 
-# In[21]:
+# In[42]:
 
+
+def remove_tags(text):
+    return TAG_RE.sub('', text)
+
+
+# In[43]:
+
+
+descriptions = [remove_tags(text) for text in descriptions]
+
+
+# In[44]:
+
+
+# cleaning to remove new lines and spaces
+# descriptions = [[[descr.replace("\n", " ") for text in descr] for descr in description] for description in descriptions]
+# descriptions = [descr for subdescr in descriptions for descr in subdescr]
+
+# print(descriptions[5])
+
+# create dict to map title of article to description
 
 # use dict comprehension to convert title and description lists to dict
 minnesota_dict = {flattened_titles[i]: descriptions[i] for i in range(len(flattened_titles))}

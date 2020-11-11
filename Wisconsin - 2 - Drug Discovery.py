@@ -51,7 +51,8 @@ for i in urls:
 
 #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
 #TODO: only grab the inside descriptions of the span tag
-
+titles = []
+overviews = []
 wisco_product_and_descriptions = {}
 
 for url in final_urls:
@@ -63,6 +64,8 @@ for url in final_urls:
     overview = final_soup.find_all("div", class_ = "section-content")[0].text
     overview = overview.replace(u'\n', u' ') 
     title = final_soup.find("div", class_ = "heading").text
+    titles.append(title)
+    overviews.append(overview)
     
     #add to dict
     wisco_product_and_descriptions[title] = overview
