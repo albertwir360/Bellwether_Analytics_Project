@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-result = requests.get('https://inventions.prf.org/tech/10/innovations')
+result = requests.get('https://inventions.prf.org/tech/1/innovations')
 # link above is for biomedical technologies, but this script can parse and clean all below links
 # providing links for all tech here:
     # biotech: https://inventions.prf.org/tech/1/innovations csv made
