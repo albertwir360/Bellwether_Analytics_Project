@@ -268,11 +268,15 @@ for url in final_urls:
 # In[7]:
 
 
+############FIX ME#########
+
+
 ###Scrape for Genomic
 # check to make sure that the website link is good 
 # current category is biologics
 result = requests.get('https://otm.illinois.edu/marketing-category/genomicsproteomics')
 #print(result.status_code)
+
 
 #puts all the html into src variable
 src= result.content
@@ -303,7 +307,6 @@ for i in urls:
     final_urls.append(final_string)
 #print(final_urls)
 
-
 #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
 #TODO: only grab the inside descriptions of the span tag
 product_and_description5 = {}
@@ -315,12 +318,22 @@ for url in final_urls:
     source = res.content
     final_soup = BeautifulSoup(source,'lxml')
     
-    title = final_soup.find(id = "page-title").find_next_sibling('p')
+    title = str(final_soup.find(id = "page-title").find_next_sibling('p'))
     overview = final_soup.find_all("div", class_ = 'field__item even')[1].text
     overview = overview.replace(u'\xa0', u' ') 
-    title = overview.replace(u'<p>', u'') 
+    
+    #solve issue with "A Sustained Inhibition of Cancer Stem Cells via ..." being in <a> tag, not <p> tage
+
+    if len(title) > 0:
+        title = title.replace(u'<p>', u' ')
+        title = title.replace(u'</p>', u' ')
+        
+            
+
     titles.append(title)
     overviews.append(overview)
+    
+
 
     #print(overview.findChildren())
     #break
@@ -464,7 +477,7 @@ product_and_description = {**product_and_description1, **product_and_description
 #print(product_and_description)
 
 
-# In[12]:
+# In[11]:
 
 
 #create one dictionary out of all dictionaries for all categories
@@ -473,12 +486,12 @@ product_and_description = {**product_and_description1, **product_and_description
 #convert dict to csv file
 import csv
 
-with open('illinois.csv', 'w') as csv_file:  
+with open('illinois2.csv', 'w') as csv_file:  
         writer = csv.writer(csv_file)
         for key, value in product_and_description.items():
             writer.writerow([key, value])
 
-with open('illinois.csv') as csv_file:
+with open('illinois2.csv') as csv_file:
     reader = csv.reader(csv_file)
     mydict = dict(reader)
 print(product_and_description)
