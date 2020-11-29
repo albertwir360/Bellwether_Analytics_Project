@@ -36,7 +36,6 @@ def scrape_technology(url):
     for i in atag:
         if i is not None:
             urls.append(i['href'])       
-    # print(urls)
     base_url = 'http://msut.technologypublisher.com/'
 
     #create final list of links
@@ -48,7 +47,6 @@ def scrape_technology(url):
 
 
     #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
-    #TODO: only grab the inside descriptions of the span tag
     descriptions = []
     titles = []
 
