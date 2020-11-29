@@ -3,48 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import csv
-#import psycopg2
-
-
-# def listToString(s):  
-    
-#     # initialize an empty string 
-#     str1 = " " 
-    
-#     # return string   
-#     return (str1.join(s)) 
-        
-        
-     
-
-# # Database Connection Variables
-# DB_NAME = "Big_10"
-# DB_USER = "Bellwether123@transfer-tech"
-# DB_PASS = "Consulting123"
-# DB_HOST = "transfer-tech.postgres.database.azure.com"
-# DB_PORT = "5432"
-
-# connection = psycopg2.connect(
-#             host = DB_HOST,
-#             dbname = DB_NAME,
-#             user = DB_USER,
-#             password = DB_PASS,
-#             port = DB_PORT,   
-#         )
-# print("connection established")
-
-
-# cursor = connection.cursor()
-# # Drop previous table of same name if one exists
-# cursor.execute("DROP TABLE IF EXISTS technology;")
-# print("Finished dropping table (if existed)")
-
-# # Create a table
-# cursor.execute("CREATE TABLE technology (id serial PRIMARY KEY, technology_name VARCHAR(100), author TEXT, description TEXT);")
-# print("Finished creating table")
-
-# # Insert some data into the table
-
 
 
 
@@ -111,20 +69,6 @@ def northwestern():
         writer = csv.writer(csv_file)
         for key, value in northwestern_dict.items():
             writer.writerow([key, value])
-
-    with open('therapeutics_northwestern.csv') as csv_file:
-        reader = csv.reader(csv_file)
-        mydict = dict(reader)
-
-    print(northwestern_dict)
-    #BELOW ARE COMMENTS RELATED TO MSU TEMPLATE MYSQL DATABASE - didn't remove bc it might be useful 
-    # cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (z, y, x))
-
-
-
-    # for i in range(len(x)):
-    #     cursor.execute("INSERT INTO technology (technology_name, author,description) VALUES (%s, %s, %s);", (str(z[i]), str(y[i]), str(x[i])))
-    #     print("Inserted a row of data")
  
 
 northwestern()
