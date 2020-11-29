@@ -35,7 +35,6 @@ def scrape_technology(url):
     for i in atag:
         if i is not None:
             urls.append(i['href'])       
-    # print(urls)
     base_url = 'http://license.umn.edu/'
 
     #create final list of links
@@ -74,7 +73,6 @@ def scrape_technology(url):
     # we don't want the first two elements in each list in descriptions list as they do not contain description info
     descriptions = [description[2:] for description in descriptions]
 
-    # clean descriptions
     # remove the empty lists and convert EACH ELEMENT TO STRING
     descriptions = [str(description) for description in descriptions if description != []]
 
