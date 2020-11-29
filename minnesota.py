@@ -37,14 +37,13 @@ def scrape_technology(url):
             urls.append(i['href'])       
     base_url = 'http://license.umn.edu/'
 
-    #create final list of links
+    # create final list of links
     final_urls = []
     for i in urls: 
         final_string = "".join((base_url, i))
         final_urls.append(final_string)
 
-    #After creating a means to get all the final urls create a final loop to make a request for every page and save the html
-    #TODO: only grab the inside descriptions of the span tag
+    # After creating a means to get all the final urls create a final loop to make a request for every page and save the html
     descriptions = []
     titles = []
 
