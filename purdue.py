@@ -13,7 +13,6 @@ result = requests.get('https://inventions.prf.org/tech/1/innovations')
 
 #puts all the html into src variable
 src = result.content
-# print(src)
 
 #create beautiful soup object in order to add more functionality to content variable 
 soup = BeautifulSoup(src,'lxml')
@@ -24,14 +23,12 @@ for td_tag in soup.find_all("td"):
     a_tag = td_tag.find('a', href=True)
     atag.append(a_tag)
 
-#print(atag)
 # gives all the urls in a python list with each element stored as strings 
 urls = []
                    
 for i in atag:
     if i is not None and i['href'][1:11] == 'innovation':
         urls.append(i['href'])       
-#print(urls)
 base_url = 'http://inventions.prf.org'
 
 #create final list of links
@@ -68,13 +65,3 @@ with open('purdue_biomed.csv', 'w') as csv_file:
         writer = csv.writer(csv_file)
         for key, value in purdue_dict.items():
             writer.writerow([key, value])
-
-with open('purdue_biomed.csv') as csv_file:
-    reader = csv.reader(csv_file)
-    mydict = dict(reader)
-#print(purdue_dict)
-
-
-
-
-
